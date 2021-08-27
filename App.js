@@ -61,6 +61,7 @@ const App = () => {
         showsVerticalScrollIndicator={false}
         // recorrer cada item de cada uno de los objetos de la api
         renderItem={({ item }) => <CoinItem coin={item} />}
+        // scroll refresh
         refreshing={refreshing}
         onRefresh={async () => {
           setRefreshing(true);
